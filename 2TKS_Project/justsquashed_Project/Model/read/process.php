@@ -10,7 +10,14 @@
     //$result = mysqli_query($conn,"Customer_login('$custUsername','$custPassword')");
     $result =mysqli_query($conn, "SELECT * FROM customer WHERE Customer_Username = '".$custUsername."' and Password = '".$custPassword."'");
     $row = mysqli_fetch_array($result);
-   
+   if(empty($custUsername) || empty($custPassword))
+   {
+    echo "<script type='text/javascript'>alert('Please enter the correct Password and username');</script>";
+    ?>
+    <script type="text/javascript">location.href = '/2TKS_Project/justsquashed_Project/View/login.php';</script>
+    <?php
+    
+   }
     if(!isset($_POST['checkboxAdmin'])){
     if($row['Customer_Username']==$custUsername && $row['Password']==$custPassword)
     {
@@ -21,10 +28,11 @@
         echo "Login username Welcome ".$row['Customer_FirstName']; 
     }else
     {
+        echo "<script type='text/javascript'>alert('Please enter the correct Password and username');</script>";
         ?>
-        <script type="text/javascript">alert("Please Enter Correct Details");</script>
+        <script type="text/javascript">location.href = '/2TKS_Project/justsquashed_Project/View/login.php';</script>
         <?php
-        header('Location: /2TKS_Project/justsquashed_Project/View/login.php');
+        
 
     exit();
     }
