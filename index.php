@@ -24,7 +24,7 @@ window.history.forward();
             <ul>
                 <li><a href="index.php">Home </a></li>
                 <li><a href="./2TKS_Project/justsquashed_Project/View/login.php">Profile</a></li>
-                <li><a href="./2TKS_Project/justsquashed_Project/View/login.php">Calendar</a></li>
+                <li><a href="./2TKS_Project/justsquashed_Project/View/login.php">New Booking</a></li>
                 <li><a href="./2TKS_Project/justsquashed_Project/View/login.php">Login</a></li>
                 <li><a href="./2TKS_Project/justsquashed_Project/View/signUp.php">Sign Up </a></li>
             </ul>
@@ -32,10 +32,9 @@ window.history.forward();
         <!-- Top Container-->
         <section>
             <header class="showcase">
-                <h1>The Squash Court</h1>
-                <p>lorem ipsum sit ametlorem ipsum sit
-                     ametlorem ipsum sit amet
-                     lorem ipsum sit amet</p>
+                <h3>JustSquashed</h3>
+                <h1>Mittal Squash Club</h1>
+                <p>“The greatest part of the game is having the opportunity to play”</p>
                     
             </header>
                 <div class="top-box top-box-a">
@@ -53,15 +52,11 @@ window.history.forward();
         <!-- Info Section---> 
         <section class="info">
             <div>
-                <h2>The Squash Courts</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Dignissimos mollitia
-                    tempora, iure dolor quo sunt? 
-                    Laudantium assumenda quibusdam 
-                    similique quis laboriosam dolorum officiis, 
-                    reiciendis, labore reprehenderit 
-                    aspernatur repellendus. Dolorem, harum?</p>
-                <a href="http://www.vaaltrianglesquash.co.za/" class="btn">Learn More</a>
+                
+                
+                <a href="http://www.vaaltrianglesquash.co.za/" class="btn"> For more infomation visit the squash club website</a>
+                <h2>JustSquashed</h2>
+                <p>Designed by 2TKS</p>
             </div>
         <!--Footer -->
         <footer>
