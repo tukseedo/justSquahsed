@@ -24,8 +24,8 @@ content="ie=edge">
             <ul>
                 <li><a href="/index.php">Home </a></li>
                 <li><a href="./profile.php">Profile</a></li>
-                <li><a href="./View/calendar.php">Calendar</a></li>
-                <li><a href="/index.php">Login Out</a></li>
+                <li><a href="./View/calendar.php">New Booking</a></li>
+                <li><a href="/index.php">Logout</a></li>
             </ul>
         </nav>
         <!-- Top Container-->
