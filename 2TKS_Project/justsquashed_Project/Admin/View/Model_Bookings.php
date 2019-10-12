@@ -11,7 +11,7 @@ if($conn -> connect_error){
     die("Connection failed: " . $conn -> connect_error);
 }
 else{
-    echo "Connected successfully <br> "; 
+    echo " "; 
     
 }
 //Code for deleting the bookings in the Bookings.php page
@@ -22,8 +22,10 @@ else{
     $result = mysqli_query($conn, "CALL Cancel_Booking('$id')") or die("Query fail: " . mysqli_error($conn));
 		
 		
-        echo "<meta http-equiv='refresh' content='0;url=Bookings.php'>";
-        echo "Booking Cancelled Successfully <br>";
+    echo "<script type='text/javascript'>alert('Booking Deleted Successfully');</script>";
+    ?>
+<script type="text/javascript">location.href = '/2TKS_Project/justsquashed_Project/Admin/View/Bookings.php';</script>
+<?php
     }
     
     if( isset($_GET['checkin']) )
@@ -32,7 +34,9 @@ else{
     $checkid = $_GET['checkin'];
     $result2 = mysqli_query($conn, "CALL BookingCheckIn('$checkid','$checknum')") or die("Query fail: " . mysqli_error($conn));
 		
-    echo "<meta http-equiv='refresh' content='0;url=Bookings.php'>";
-        echo "Customer Checked In <br>" ;
+    echo "<script type='text/javascript'>alert('Customer Checked in.');</script>";
+    ?>
+<script type="text/javascript">location.href = '/2TKS_Project/justsquashed_Project/Admin/View/Bookings.php';</script>
+<?php
 	}
 ?>
