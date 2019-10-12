@@ -36,7 +36,7 @@ $q = mysqli_query($conn, "Call Display_customerBooking('$cus_username')") or die
     <div class="jumbotron jumbotron-fluid">
     <div class="container">
     <h1>AcceloMittal Squash Court</h1><br>    
-        <p>coresum sajcoresum saj coresum saj coresum sajuis coresum sajuid coresum saj</p>
+        <p>This is a list of all your upcoming bookings.</p>
         <br>
         <a href="" class="btn" data-toggle="modal" data-target="#myModal"><h3>Check Demerit</h3></a>
         <a href="./LoggedIn.php" class="btn" name="Home"><h3>Home</h3></a>
@@ -65,7 +65,7 @@ $q = mysqli_query($conn, "Call Display_customerBooking('$cus_username')") or die
     $count =1;
     if($dataA = mysqli_num_rows($q)<=0){?>
         <tr align ="center">
-            <th align="center" colspan="6"><h2>You have made no booking </h2></th>
+            <th align="center" colspan="6"><h2>You have made no bookings. </h2></th>
         </tr>
         <?php
     }
@@ -85,7 +85,7 @@ $q = mysqli_query($conn, "Call Display_customerBooking('$cus_username')") or die
                 <!--</label>-->
                 </td> 
                 <td> 
-                <input type ="submit" name="deleteBtn" class="btn btn-info">
+                <input type ="submit" value= "Cancel Booking"name="deleteBtn" class="btn btn-info">
                 </td>
                
             </form>
@@ -119,16 +119,16 @@ $q = mysqli_query($conn, "Call Display_customerBooking('$cus_username')") or die
            include 'CountDemerit.php';
             
             if(($preDemerit)==0){?>
-             <p><h3> You have not missed a booking</h3></p>
+             <p><h4> You have not missed a booking</h4></p>
            <?php }
            if(($preDemerit)>0 and ($preDemerit)<=1 ){?>
-            <p><h3>You have one missed you Booking</h3></p>
+            <p><h4>You have one missed you Booking</h4></p>
           <?php }
           if(($preDemerit)>1 and ($preDemerit)<=2 ){?>
-            <p><h3>You have missed two booking <br> You have pay R50 Fine</h3></p>
+            <p><h4>You have missed two booking <br> You have pay R50 Fine</h4></p>
           <?php }
           if(($preDemerit)>2 and ($preDemerit)>=3 ){?>
-            <p><h3>You have missed three or more bookings go to <br> Accelor Mittal Squash Court To fix you account</h3></p>
+            <p><h4>You have missed three or more bookings go to <br> Accelor Mittal Squash Court To fix you account</h4></p>
           <?php }?>
 
         
