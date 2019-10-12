@@ -49,7 +49,7 @@
                             <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
                             <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" name="checkboxRemember">
-                                    <label class="form-check-label">Remember</label>
+                                    <label class="form-check-label">Remember </label>
                                   </div>
                           </form>                             
                 </section>

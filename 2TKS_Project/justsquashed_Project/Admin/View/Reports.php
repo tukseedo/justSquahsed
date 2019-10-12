@@ -55,10 +55,13 @@ $result = mysqli_query($conn,
                             <a class="navbar-brand" href="Make Booking Admin.php">Make Booking</a>
                         </li>
                         <li class="nav-item">
-                            <a class="navbar-brand" href="AddingM.php">Add Member</a>
+                        <a class="navbar-brand" href="searchCust.php">Add Member</a>
                         </li>
                         <li class="nav-item">
                             <a class="navbar-brand" href="Reports.php">Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="/index.php">Log out</a>
                         </li>
             </ul>
         </div>

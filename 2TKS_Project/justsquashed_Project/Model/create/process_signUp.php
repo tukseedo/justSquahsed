@@ -14,6 +14,7 @@
         echo "<script type='text/javascript'>alert('Password does not match!');</script>";
         ?>
     <script type="text/javascript">location.href = '/2TKS_Project/justsquashed_Project/View/signUp.php';</script>
+    <?php
 
     }
     $result = "INSERT INTO customer

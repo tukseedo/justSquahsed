@@ -29,7 +29,7 @@
 <body>
         <div class="header" >
                 <h1 align ="center" style="font-size:300%;">Mittal Squash Club</h1>
-                <p align ="center">Squashhhhhhhh</p>
+                <p align ="center">JustSquashed by 2TKS</p>
               </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" >
             
@@ -49,6 +49,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="navbar-brand" href="Reports.php">Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="/index.php">LOGOUT</a>
                         </li>
             </ul>
         </div>
