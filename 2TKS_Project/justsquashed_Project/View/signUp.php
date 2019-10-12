@@ -47,6 +47,7 @@
                               <input type="password" class="form-control" name="confirm_password" placeholder="Enter Password">
                             </div>
                             <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
+                            <button onclick="location.href='/index.php';" type="Cancel" class="btn btn-primary btn-block" name="cancel">Cancel</button>
                             <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" name="checkboxRemember">
                                     <label class="form-check-label">Remember </label>

@@ -10,6 +10,12 @@
     //$result = mysqli_query($conn,"Customer_login('$custUsername','$custPassword')");
     $result =mysqli_query($conn, "SELECT * FROM customer WHERE Customer_Username = '".$custUsername."' and Password = '".$custPassword."'");
     $row = mysqli_fetch_array($result);
+    if(isset($_POST['cancel']))
+    {
+        ?>
+        <script type="text/javascript">location.href = '/index.php';</script>
+        <?php
+    }
    if(empty($custUsername) || empty($custPassword))
    {
     echo "<script type='text/javascript'>alert('Please enter the correct Password and username');</script>";
@@ -54,6 +60,7 @@
         <?php
         header('Location: /2TKS_Project/justsquashed_Project/View/login.php');
     }
+    
     
     }
 ?>

@@ -10,6 +10,14 @@
    $member = "Non Member";
    
     include '../connection.php';
+
+    if(isset($_POST['cancel']))
+    {
+        ?>
+    <script type="text/javascript">location.href = '/index.php';</script>
+    <?php
+
+    }
     if($custPassWord != $confirm_password){
         echo "<script type='text/javascript'>alert('Password does not match!');</script>";
         ?>

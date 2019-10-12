@@ -27,6 +27,7 @@
                               <label class="form-check-label" >Admin</label>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <button type="cancel" name="cancel" class="btn btn-primary btn-block">Cancel</button>
                             <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" name="checkboxRemember">
                                     <label class="form-check-label">Remember</label>
